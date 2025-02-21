@@ -1,2 +1,5 @@
 # axionc
  
+Axion is a programming language I am building in order to solve a few problems in java whilst keeping the Object Oriented Paradigm. There will be a mix of functional programming techniques used in order to solve other problems too and to speed up workflow. Boilerplate will also be reduced by allowing functions to be declared outside of classes, and by reducing package names and instead using modules, which will contain all the code needed for almost any project. It will also be built to easily interface with compiled (machine code compiled) languages, as all you will need is a native access modifier and then compile it with a properties file to link it up to the source file. And to keep platform-independent, everything will be compiled down to a simple bytecode.
+
+Another feature will be lazy loading classes, which makes the initial startup time less, and allows you to optimize large projects by keeping classes unloaded until needed, although they will be ready for quick access. 
