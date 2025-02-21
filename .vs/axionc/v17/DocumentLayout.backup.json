@@ -68,8 +68,7 @@
               "RelativeToolTip": "ast.hpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-20T19:00:56.987Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T19:00:56.987Z"
             },
             {
               "$type": "Document",
@@ -81,8 +80,7 @@
               "RelativeToolTip": "ast.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-20T19:01:13.316Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T19:01:13.316Z"
             }
           ]
         },
@@ -113,8 +111,7 @@
               "RelativeToolTip": "lexeme.hpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-11T22:41:30.67Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-11T22:41:30.67Z"
             },
             {
               "$type": "Document",
@@ -126,8 +123,7 @@
               "RelativeToolTip": "lexeme.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-16T20:25:40.766Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T20:25:40.766Z"
             },
             {
               "$type": "Document",
@@ -139,8 +135,7 @@
               "RelativeToolTip": "main.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-11T22:31:19.438Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-11T22:31:19.438Z"
             }
           ]
         }
