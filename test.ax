@@ -1,30 +1,113 @@
-#DEFINE MACRO ADD(x, y) x + y
+//
+// Control structures
+//
 
-import axion.math
-
-string text = "Hello! This is a string! It uses quotes! Like this: \"\""
-int num = 1 +1
-num2 = ADD(1, num)
-fraction confusing = 1 :3
-bool to_be_or_not_to_Be = true
-if (to_be_or_not_to_Be ) {
-	// Testing comments and whitespace
-    print(text, "other arg")
+// If statement
+if (condition) {
+	statement
 }
 
-int hex_literal = 0x1023.CAp-10
-/* Testing */
-while (num2 == num1) {
-   println("idk")
-  break
+// IfElse statement
+if (condition) {
+	statement
+} else {
+	statement
 }
 
-"Just for fun, lets === put a triple"
-
-sys.print(pwr(3,2)) // Print 3 squared
-
-int testBoi(int param) {
-    return param + 1
+// IfElifElse statement
+if (condition) {
+	statement
+} else if (condition) {
+	statement
+} else {
+	statement
 }
 
-/*EOF */
+// For loop
+for (initialization statement; continuation condition; iteration statement) {
+	statement
+}
+
+// ForEach loop
+for (type v in array) {
+	statement
+}
+
+// While loop
+while (condition) {
+	statement
+}
+
+// DoWhile loop
+do {
+	statement
+} while (condition)
+
+// Switch statement
+switch (expression that returns primitive) {
+	case expression:
+		statement
+		break
+	case expression:
+		statement
+	default:
+		statement
+}
+
+// Try statement
+try {
+	statement
+}
+
+// TryCatch statement
+try {
+	statement
+} catch (Exception e) {
+	statement
+} // Other catch statements too
+
+// TryCatchFinally statement
+try {
+	statement
+} catch (Exception | Throwable e) {
+	statement
+} finally {
+	statement
+}
+
+// TryWithResources (you get it)
+try (Stream resource = new Stream()) {
+	statement
+} catch (Exception | Throwable e) { // Optional
+	statement
+} finally { // Optional
+	statement
+}
+
+// Functions
+
+type NameOfFunction(type param1, type param2=default_val, type params...) {
+	statement
+	return (type) value
+}
+
+//
+// Data structures
+//
+
+// Class declaration
+
+public class ClassName extends Object { // [public|protected|private] (sealed|final|nonsealed|abstract) class ClassName (extends BaseClassName) (implements Interface1, Interface2) (permits ClassName2)
+	(fields|methods|blocks)
+}
+
+// field
+private type Value = expression
+
+// block
+{ // Can also be static {
+	statement
+}
+
+// method
+public <function>

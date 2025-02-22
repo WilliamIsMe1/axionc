@@ -108,7 +108,7 @@ void scanFile(ifstream& inStream)
         else if (regex_match(currentToken, regex("\\}"))) {
             tokenType = RIGHT_BRACE;
         }
-        else if (regex_match(currentToken, regex("abstract|bool|break|byte|case|catch|char|class|continue|default|do|double|else|enum|extends|final|finally|float|for|if|implements|import|isoftype|int|interface|long|module|native|new|private|protected|public|return|short|static|super|switch|this|throw|throws|true|false|try|void|while|operator|requires|exportsh"))) {
+        else if (regex_match(currentToken, regex("abstract|bool|break|byte|case|catch|char|class|continue|default|do|double|else|enum|extends|final|finally|float|for|if|implements|import|isoftype|int|interface|long|module|native|new|nonsealed|permits|private|protected|public|return|sealed|short|static|super|switch|this|throw|throws|true|false|try|void|while|operator|requires|exports|in"))) {
             tokenType = KEYWORD;
         }
         else if (regex_match(currentToken, regex("[a-zA-Z_][a-zA-Z0-9_]*$"))) {

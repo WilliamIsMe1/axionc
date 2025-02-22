@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{FA6C126D-61F4-4784-9802-5BF6729303C4}|axionc.vcxproj|solutionrelative:test.ax||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA6C126D-61F4-4784-9802-5BF6729303C4}|axionc.vcxproj|C:\\Users\\William\\source\\repos\\axionc\\ast.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FA6C126D-61F4-4784-9802-5BF6729303C4}|axionc.vcxproj|solutionrelative:ast.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FA6C126D-61F4-4784-9802-5BF6729303C4}|axionc.vcxproj|C:\\Users\\William\\source\\repos\\axionc\\lexer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FA6C126D-61F4-4784-9802-5BF6729303C4}|axionc.vcxproj|solutionrelative:lexer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA6C126D-61F4-4784-9802-5BF6729303C4}|axionc.vcxproj|C:\\Users\\William\\source\\repos\\axionc\\ast.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FA6C126D-61F4-4784-9802-5BF6729303C4}|axionc.vcxproj|solutionrelative:ast.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA6C126D-61F4-4784-9802-5BF6729303C4}|axionc.vcxproj|C:\\Users\\William\\source\\repos\\axionc\\ast.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "test.ax",
               "ToolTip": "C:\\Users\\William\\source\\repos\\axionc\\test.ax",
               "RelativeToolTip": "test.ax",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAmwHAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-02-16T20:45:40.937Z",
               "IsPinned": true,
@@ -72,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ast.cpp",
               "DocumentMoniker": "C:\\Users\\William\\source\\repos\\axionc\\ast.cpp",
               "RelativeDocumentMoniker": "ast.cpp",
@@ -90,13 +90,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "lexer.cpp",
               "DocumentMoniker": "C:\\Users\\William\\source\\repos\\axionc\\lexer.cpp",
               "RelativeDocumentMoniker": "lexer.cpp",
               "ToolTip": "C:\\Users\\William\\source\\repos\\axionc\\lexer.cpp",
               "RelativeToolTip": "lexer.cpp",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAYwG4AAABpAQAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAYwG4AAADyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-20T19:05:17.148Z",
               "EditorCaption": ""
