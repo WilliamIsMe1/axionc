@@ -4,7 +4,8 @@
 
 using namespace std;
 
-void printTokens() {
+void printTokens()
+{
 	cout << "[" << endl;
 	while (!tokenStack.empty()) {
 		token Token = tokenStack.front();
