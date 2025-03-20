@@ -24,7 +24,7 @@ void printTokens() {
 
 int main(int argc, char* argv[]) 
 {
-	ifstream fin("./test.ax");
+	ifstream fin("./test2.ax");
 	if (!fin) {
 		cerr << "Failed to open file." << endl;
 		return 1;

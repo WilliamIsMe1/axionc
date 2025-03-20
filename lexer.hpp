@@ -7,6 +7,8 @@
 
 extern deque<token> tokenStack;
 
+extern bool hadError;
+
 void scanFile(ifstream& inStream);
 
 deque<string> regex_search_custom(ifstream& file, const regex& pattern);

@@ -1,3 +1,7 @@
-﻿  lexer.cpp
-C:\Users\William\source\repos\axionc\lexer.cpp(56,41): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+﻿  ast.cpp
+  lexeme.cpp
+  lexer.cpp
+C:\Users\William\source\repos\axionc\lexer.cpp(57,41): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+  main.cpp
+  Generating Code...
   axionc.vcxproj -> C:\Users\William\source\repos\axionc\x64\Debug\axionc.exe

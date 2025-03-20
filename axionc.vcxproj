@@ -131,14 +131,20 @@
     <ClCompile Include="lexeme.cpp" />
     <ClCompile Include="lexer.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="parser.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ast.hpp" />
     <ClInclude Include="lexeme.hpp" />
     <ClInclude Include="lexer.hpp" />
+    <ClInclude Include="parser.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="test.ax" />
+    <None Include="test2.ax" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="axion_plans.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

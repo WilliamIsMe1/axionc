@@ -1,11 +1,9 @@
-//
-// Control structures
-//
-
+// Control statements
 // If statement
 if (condition) {
 	statement
 }
+
 
 // IfElse statement
 if (condition) {
@@ -15,7 +13,7 @@ if (condition) {
 }
 
 // IfElifElse statement
-if (condition) {
+if (condition) {g
 	statement
 } else if (condition) {
 	statement
@@ -110,4 +108,27 @@ private type Value = expression
 }
 
 // method
-public <function>
+public type NameOfFunction(type param1, type param2=default_val, type params...) {
+	statement
+	return (type) value
+}
+
+// constructor
+public type(type param1, type param2=default_val, type params...) {
+	statement // examples being this(param1, param2, 20) or this.param1 = param1
+}
+
+// Interface declaration
+public interface Cloneable {
+	methods // ie. public Object clone(); or public default Object clone() { return this.clone() }
+}
+
+// Enum declaration
+public enum EnumName {
+	CASE1 // Separated by newlines
+	CASE2
+	CASE3
+	CASE4
+	CASE5
+	// Like java, you can instantiate multiple things
+}
