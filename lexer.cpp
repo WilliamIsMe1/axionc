@@ -38,7 +38,7 @@ void scanFile(ifstream& inStream)
     string commentPattern = "(\\/\\/.*|\\/\\*[\\s\\S]*?\\*\\/)";
     string newlinePattern = "(\\r\\n|\\n|\\r)";
     string operatorPattern = "\\+=|^#.*|\\+|==|\\+\\+|-=|--|!=|\\(|\\)|\\.\\.\\.|\\.|=|\\*\\*=|\\*\\*|\\*=|\\*|\\/\\=|\\/|:=|:|\\{|\\}|\\|\\||&&|&=|&|\\|=|@|\\|\\^=|\\^|!|,";
-    string identifierPattern = "(?!\\d)(?!_+$)(?!.*__)[a-zA-Z0-9_]+";
+    string identifierPattern = "(?!\\d)(?!_+)(?!.*__)[a-zA-Z0-9_]+";
     string whiteSpacePattern = "\\s";
     string catchallPattern = "[^\\w\\s]+";
     string fullPattern = numberPattern + "|" + hexPattern + "|" + stringPattern + "|" + commentPattern + "|" + newlinePattern + "|" + operatorPattern + "|" + identifierPattern + "|" + whiteSpacePattern;
@@ -336,8 +336,11 @@ void scanFile(ifstream& inStream)
         }
 
         // Create the token and add it to the stack
-        if (tokenType != WHITESPACE_MARKER)
+        if (tokenType != WHITESPACE_MARKER && tokenType != ERROR && tokenType != NEWLINE) // Ignore whitespace and errors
             createToken(lineNum, columnNum, tokenType, currentToken, tokenStack);
+        
+        if (tokenType == ERROR)
+            cout << "Lexical error at line " << lineNum << " and column " << columnNum << ": " << currentToken << endl;
     }
 
 }

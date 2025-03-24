@@ -1,8 +1,6 @@
 # axionc
  
-Axion is a programming language I am building in order to solve a few problems in java whilst keeping the Object Oriented Paradigm. There will be a mix of functional programming techniques used in order to solve other problems too and to speed up workflow. Boilerplate will also be reduced by allowing functions to be declared outside of classes, and by reducing package names and instead using modules, which will contain all the code needed for almost any project. It will also be built to easily interface with compiled (machine code compiled) languages, as all you will need is a native access modifier and then compile it with a properties file to link it up to the source file. And to keep platform-independent, everything will be compiled down to a simple bytecode.
-
-Another feature will be lazy loading classes, which makes the initial startup time less, and allows you to optimize large projects by keeping classes unloaded until needed, although they will be ready for quick access. 
+Axion is a bytecode compiled language run on a VM for portability, made to merge the FP and the OOP paradigms in a new way that allows things like native partial function application, closures, 
 
 # Format
 Fields, Methods, and Classes will all be named in PascalCase
@@ -10,3 +8,5 @@ Fields, Methods, and Classes will all be named in PascalCase
 Local variables will be in camelCase
 
 Constants will be in SCREAMING_SNAKE_CASE
+
+Semicolons are required.

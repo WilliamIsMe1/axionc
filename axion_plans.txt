@@ -1,106 +1,11 @@
-Program =: Program Statement
-         | Program EOF_
-         | Statement
+Program := Statement* EOF
          ;
 
-Statement =: AssertStatement
-           | IfStatement
-           | IfElseStatement
-           | WhileStatement
-           | BreakStatement
-           | ContinueStatement
-           | DoWhileStatement
-           | ForStatement
-           | ForeachStatement
-           | SwitchStatement
-           | TryStatement 
-           | TryWithResourcesStatement 
-           | ThrowStatement 
-           | VariableDeclarationStatement
-           | VariableDeclarationAssignmentStatement
-           | GenericVariableDeclarationStatement 
-           | GenericVariableDeclarationAssignmentStatement
-           | VariableAssignmentStatement 
-           | CompoundAssignmentStatement 
-           | ExpressionStatement 
-           | BlockStatement 
-           | FunctionDeclarationStatement 
-           | GenericFunctionDeclarationStatement 
-           | ReturnStatement 
-           | FunctionCallStatement 
-           | GenericFunctionCallStatement 
-           | ClassDeclarationStatement 
-           | GenericClassDeclarationStatement 
-           | ImportStatement 
-           | ExportStatement 
-           | AnnotationStatement 
-           | MacroDeclarationStatement 
-           | NEWLINE
-           ;
+Statement := NULL;
 
-AssertStatement =: KEYWORD["assert"] Expression NEWLINE
-
-IfStatement =: KEYWORD["if"] L_PAREN Expression R_PAREN BlockStatement
-             | IfStatement ElseIfStatement
-             ;
-
-ElseIfStatement =: KEYWORD["else"] IfStatement;
-
-IfElseStatement =: IfStatement KEYWORD["else"] BlockStatement NEWLINE;
-
-WhileStatement =: KEYWORD["while"] L_PAREN Expression R_PAREN BlockStatement NEWLINE;
-
-BreakStatement =: KEYWORD["break"] NEWLINE;
-
-ContinueStatement =: KEYWORD["continue"] NEWLINE;
-
-DoWhileStatement =: KEYWORD["do"] BlockStatement KEYWORD["while"] L_PAREN Expression R_PAREN NEWLINE
-
-ForStatement =: KEYWORD["for"] L_PAREN (VariableAssignment|VariableDeclarationAssignment PUNCTUATION[";"] Expression PUNCTUATION[";"] Statement) SEMICOLON 
-
-ForeachStatement =: /* Definition here */
-
-SwitchStatement =: /* Definition here */
-
-TryStatement =: /* Definition here */
-
-TryWithResourcesStatement =: /* Definition here */
-
-ThrowStatement =: /* Definition here */
-
-VariableDeclarationStatement =: /* Definition here */
-
-GenericVariableDeclarationStatement =: /* Definition here */
-
-AssignmentStatement =: /* Definition here */
-
-CompoundAssignmentStatement =: /* Definition here */
-
-ExpressionStatement =: /* Definition here */
-
-BlockStatement =: L_BRACE Statement* R_BRACE
-
-FunctionDeclarationStatement =: /* Definition here */
-
-GenericFunctionDeclarationStatement =: /* Definition here */
-
-ReturnStatement =: /* Definition here */
-
-FunctionCallStatement =: /* Definition here */
-
-GenericFunctionCallStatement =: /* Definition here */
-
-ClassDeclarationStatement =: /* Definition here */
-
-GenericClassDeclarationStatement =: /* Definition here */
-
-ImportStatement =: /* Definition here */
-
-ExportStatement =: /* Definition here */
-
-AnnotationStatement =: /* Definition here */
-
-MacroDeclarationStatement =: /* Definition here */
-
-Expression =: Expression ADDITIVE_OPERATOR 
-
+Expression := Expression 
+            |
+            | Expression : Expression
+            | Expression + Expression | Expression - Expression
+            | Expression * Expression | Expression / Expression
+            | Expression 

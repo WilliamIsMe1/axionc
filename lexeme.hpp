@@ -1,6 +1,4 @@
-#ifndef AXION_LEXEME_HPP
-#define AXION_LEXEME_HPP
-
+#pragma once
 #include <string>
 #include <deque>
 using namespace std;
@@ -38,6 +36,8 @@ enum TokenType {
 	EQUALS_EQUALS,
 	EQUALS_EQUALS_EQUALS,
 	BANG_EQUALS_EQUALS,
+	L_ANGLE_EQUALS,
+	R_ANGLE_EQUALS,
 
 	// Logic Operators
 	AMPERSAND_AMPERSAND,
@@ -53,18 +53,16 @@ enum TokenType {
 	R_ANGLE_R_ANGLE,
 
 	// Assignment Operators
-	EQUALS,          
+	EQUALS,
 	PLUS_EQUALS,
 	MINUS_EQUALS,
 	STAR_EQUALS,
-	SLASH_EQUALS,    
+	SLASH_EQUALS,
 	MOD_EQUALS,
 	STAR_STAR_EQUALS,
 	AMPERSAND_EQUALS,
-	PIPE_EQUALS,     
-	CARET_EQUALS,    
-	L_ANGLE_EQUALS,  
-	R_ANGLE_EQUALS,  
+	PIPE_EQUALS,
+	CARET_EQUALS,
 
 	// Punctuation
 	DOT,
@@ -146,4 +144,3 @@ typedef struct {
 token createToken(int line, int column, TokenType tokenType, string contents, deque<token>& tokenStack);
 
 string getTokenName(TokenType token);
-#endif
