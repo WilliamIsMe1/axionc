@@ -15,7 +15,6 @@ class ASTNode {
 public:
 	virtual ~ASTNode() = default;
 	virtual void accept(class Visitor& visitor) = 0;
-	virtual any eval() = 0;
 };
 
 class StatementNode : public ASTNode {
@@ -26,25 +25,14 @@ class ProgramNode : public ASTNode {
 
 };
 
-class AdditionNode : public ASTNode {
+class BinaryOpNode : public ASTNode {
 private:
 	char op;
-	ASTNode *leftChild;
-	ASTNode *rightChild;
 public:
-	AdditionNode(char o, ASTNode* leftChild, ASTNode* rightChild) : op(o), leftChild(leftChild), rightChild(rightChild) {
-
-	}
-
-};
-
-class MutliplicationNode : public ASTNode {
-private:
-	char op;
-	ASTNode* leftChild;
-	ASTNode* rightChild;
-public:
-	MutliplicationNode(char o, ASTNode* leftChild, ASTNode* rightChild) : op(o), leftChild(leftChild), rightChild(rightChild) {
+	ASTNode* leftNode;
+	ASTNode* rightNode;
+	BinaryOpNode(char op, ASTNode* leftNode, ASTNode* rightNode) : op(op), leftNode(leftNode), rightNode(rightNode)
+	{
 
 	}
 };

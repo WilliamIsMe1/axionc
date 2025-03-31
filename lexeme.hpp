@@ -49,6 +49,7 @@ enum TokenType {
 	AMPERSAND,
 	PIPE,
 	CARET,
+	TILDE, 
 	L_ANGLE_L_ANGLE,
 	R_ANGLE_R_ANGLE,
 

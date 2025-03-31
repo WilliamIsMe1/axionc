@@ -3,9 +3,14 @@ Program := Statement* EOF
 
 Statement := NULL;
 
-Expression := Expression 
-            |
-            | Expression : Expression
-            | Expression + Expression | Expression - Expression
-            | Expression * Expression | Expression / Expression
-            | Expression 
+Expression := Expression , Expression
+            | 
+            | Expression COLON Expression
+            | Expression PLUS Expression | Expression MINUS Expression
+            | Expression STAR Expression | Expression SLASH Expression
+            | Expression STAR_STAR Expression
+            | BANG Expression | MINUS Expression
+            | PLUS_PLUS Expression | MINUS_MINUS Expression
+            | Expression PLUS_PLUS | Expression MINUS_MINUS
+            | 
+            ;

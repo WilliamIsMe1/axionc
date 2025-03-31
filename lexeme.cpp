@@ -53,6 +53,7 @@ string getTokenName(TokenType token) {
     case CARET: return "CARET";
     case L_ANGLE_L_ANGLE: return "L_ANGLE_L_ANGLE";
     case R_ANGLE_R_ANGLE: return "R_ANGLE_R_ANGLE";
+    case TILDE: return "TILDE";
 
         // Assignment Operators
     case EQUALS: return "EQUALS";

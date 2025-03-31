@@ -37,7 +37,7 @@ void scanFile(ifstream& inStream)
     string stringPattern = "\"([^\\" "\\]*(\\\\.[^\\" "\\]*)*)\"";
     string commentPattern = "(\\/\\/.*|\\/\\*[\\s\\S]*?\\*\\/)";
     string newlinePattern = "(\\r\\n|\\n|\\r)";
-    string operatorPattern = "\\+=|^#.*|\\+|==|\\+\\+|-=|--|!=|\\(|\\)|\\.\\.\\.|\\.|=|\\*\\*=|\\*\\*|\\*=|\\*|\\/\\=|\\/|:=|:|\\{|\\}|\\|\\||&&|&=|&|\\|=|@|\\|\\^=|\\^|!|,";
+    string operatorPattern = "\\+=|^#.*|\\+|==|\\+\\+|-=|--|!=|\\(|\\)|\\.\\.\\.|\\.|=|\\*\\*=|\\*\\*|\\*=|\\*|\\/\\=|\\/|:=|:|\\{|\\}|\\|\\||&&|&=|&|\\|=|@|\\|\\^=|\\^|!|~=|~|,";
     string identifierPattern = "(?!\\d)(?!_+)(?!.*__)[a-zA-Z0-9_]+";
     string whiteSpacePattern = "\\s";
     string catchallPattern = "[^\\w\\s]+";
@@ -135,6 +135,9 @@ void scanFile(ifstream& inStream)
         }
         else if (currentToken == "^") {
             tokenType = CARET;
+        }
+        else if (currentToken == "~") {
+            tokenType = TILDE;
         }
         else if (currentToken == "<<") {
             tokenType = L_ANGLE_L_ANGLE;
