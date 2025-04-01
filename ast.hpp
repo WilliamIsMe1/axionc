@@ -1,5 +1,4 @@
-#ifndef AXION_AST_HPP
-#define AXION_AST_HPP
+#pragma once
 
 #include <string>
 #include <vector>
@@ -36,5 +35,3 @@ public:
 
 	}
 };
-
-#endif

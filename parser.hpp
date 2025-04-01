@@ -1,5 +1,4 @@
-#ifndef PARSER_HPP
-#define PARSER_HPP
+#pragma once
 
 #include <string>
 using namespace std;
@@ -9,5 +8,3 @@ struct GrammarRule {
 	string lookahead;
 };
 
-
-#endif
