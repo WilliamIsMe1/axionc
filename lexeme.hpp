@@ -27,7 +27,7 @@ enum TokenType {
 	STAR,
 	SLASH,
 	STAR_STAR,
-	COLON,
+	COLON, // The ratio operator. It doesn't bind tightly, as it is for ratios, not division.
 
 	// Comparison operators
 	L_ANGLE,

@@ -1,16 +1,23 @@
 Program := Statement* EOF
          ;
 
-Statement := NULL;
+Statement := 
+           |
+           ;
 
-Expression := Expression , Expression
+EXPRESSION := EXPRESSION COMMA EXPRESSION // Gets more binding the farther down it goes
+            |
             | 
-            | Expression COLON Expression
-            | Expression PLUS Expression | Expression MINUS Expression
-            | Expression STAR Expression | Expression SLASH Expression
-            | Expression STAR_STAR Expression
-            | BANG Expression | MINUS Expression
-            | PLUS_PLUS Expression | MINUS_MINUS Expression
-            | Expression PLUS_PLUS | Expression MINUS_MINUS
-            | 
+            | EXPRESSION AMPERSAND_AMPERSAND EXPRESSION
+            | EXPRESSION PIPE_PIPE EXPRESSION
+            | EXPRESSION CARET_CARET
+            | EXPRESSION COLON EXPRESSION
+            | EXPRESSION PLUS EXPRESSION | EXPRESSION MINUS EXPRESSION
+            | EXPRESSION STAR EXPRESSION | EXPRESSION SLASH EXPRESSION
+            | EXPRESSION STAR_STAR EXPRESSION
+            | BANG EXPRESSION | MINUS EXPRESSION
+            | PLUS_PLUS EXPRESSION | MINUS_MINUS EXPRESSION
+            | EXPRESSION PLUS_PLUS | EXPRESSION MINUS_MINUS
+            | NUMBER_LITERAL | HEX_LITERAL | BOOLEAN_LITERAL | STRING_LITERAL | IDENTIFIER
+            |
             ;

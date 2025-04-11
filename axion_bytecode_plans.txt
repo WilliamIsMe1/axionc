@@ -1,0 +1,10 @@
+file {
+    header header;
+}
+
+header {
+    u4 magic_number; // 0xDEADBEEF
+    u2 major_version;
+    u2 minor_version;
+    
+}
