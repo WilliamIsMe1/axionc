@@ -25,7 +25,7 @@ This will be a C-like with Swift features, Python ecosystems, and Java's type sa
 
 As for syntax, you have a number of operators at your disposal. For arithmetic, you have `+`, `-`, `*`, `**`, `/`, `++`. `--`. and :. You will recognize most of them except for the `:` and the `**` operators. `:` is the ratio operator, and it is not very binding, as it is meant to create fractions, which are a primitive type that uses integers as it's numerator and denominator. `**` is from python, and it is just an exponentiation operator.
 
-Some example code will be listed below
+Some example code will be listed below. Most of the code is not final, and will be used to show off syntax.
 ```
 import axion.util
 import axion.io
@@ -60,6 +60,18 @@ lambda<int>(int, int) Add = (a, b) => {
 }
 
 lambda<int>(int) Add5 = bind (?, 5) to Add
+
+class GenericThing<T extends number> {
+    T value
+
+    public GenericThing(T in) {
+        value = in
+    }
+
+    public AddToSelf(T in) {
+        value += in
+    }
+}
 
 void Main() {
     SystemOut.PrintLn("Hello, Axion World!")

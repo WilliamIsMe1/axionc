@@ -1,10 +1,22 @@
 file {
-    header header;
+    header header; // 8 bytes
+    u4 constant_pool_count; // 4 bytes
+    cp_info constant_pool[]; 
+    u2 data_struct_pool_count;
+    ds_info data_struct_pool_[];
+    u2 global_pool_count;
+    gp_info global_pool[];
+    u2 function_pool_count;
+    fp_info function_pool[];
 }
 
 header {
     u4 magic_number; // 0xDEADBEEF
     u2 major_version;
     u2 minor_version;
-    
+}
+
+cp_info {
+    u1 tag;
+    u1 data[];
 }
